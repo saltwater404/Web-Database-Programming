@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>Form Validation</title>
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+        <script src="js/custom.js"></script>
+    </head>
+    <body>
+    	<div class="wrapper">
+            <form>
+                <table width="400" border="0" cellpadding="0" cellspacing="10" align="center">
+                    <tr>
+                        <td>
+                            <label for="name">Name<span class="req_star">*</span></label><br/>
+                            <input type="text" id="name" class="input_field" placeholder="Name">
+                            <div class="error_mess" id="name_error"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="cell">Phone<span class="req_star">*</span></label><br/>
+                            <input type="text" id="cell" class="input_field" placeholder="Phone Number">
+                            <div class="error_mess" id="phone_error"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="username">Username</label><br/>
+                            <input type="text" id="username" class="input_field" placeholder="Username">
+                            <div class="error_mess" id="username_error"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Email</label><br/>
+                            <input type="email" id="email" name="email" class="input_field" placeholder="Email">
+                            <div class="error_mess" id="email_error"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pass">Password</label><br/>
+                            <input type="password" id="pass" name="password" class="input_field">
+                            <div class="error_mess" id="pass_error"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="repass">Confirm-Password</label><br/>
+                            <input type="password" id="repass" name="repass" class="input_field">
+                            <div class="error_mess" id="repass_error"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" onClick="return formValid()" name="submit" class="sub_but" value="SEND">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
